@@ -4,12 +4,12 @@ public abstract class Pessoa {
     protected String sexo;
     protected float experiencia;
 
-    
-
-
-    
-
-    
+    public Pessoa(String nome, int idade, String sexo, float experiencia) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.experiencia = 0;
+    }
 
 
     public String getNome() {
