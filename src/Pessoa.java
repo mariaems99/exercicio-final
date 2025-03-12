@@ -2,13 +2,13 @@ public abstract class Pessoa {
     protected String nome;
     protected int idade;
     protected String sexo;
-    protected float experiencia;
 
-    public Pessoa(String nome, int idade, String sexo, float experiencia) {
+
+    public Pessoa(String nome, int idade, String sexo) {
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
-        this.experiencia = 0;
+        
     }
 
 
@@ -30,12 +30,13 @@ public abstract class Pessoa {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-    public float getExperiencia() {
-        return experiencia;
+
+
+    @Override
+    public String toString() {
+        return "Pessoa [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "]";
     }
-    public void setExperiencia(float experiencia) {
-        this.experiencia = experiencia;
-    }
+    
 
 
 }
